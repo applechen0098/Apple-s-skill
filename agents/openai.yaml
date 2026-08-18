@@ -1,4 +1,11 @@
 interface:
   display_name: "LFF / 3PF Chatbot Optimization"
-  short_description: "标注LFF/3PF会话并生成QA、SOP/API与人工优化计划"
+  short_description: "Annotate LFF/3PF conversations and build chatbot optimization plans"
   default_prompt: "Use $lff-3pf-chatbot-optimization to annotate LFF/3PF conversations with physical-row identity checks, then produce source-grounded QA, SOP-based API/Taskflow, and human-handoff optimization actions with separate solution and issue-description fields."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
